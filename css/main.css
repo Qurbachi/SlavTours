@@ -16,7 +16,8 @@ body {
   background-color: #1e272e; }
 
 .container {
-  max-width: 1400px; }
+  max-width: 1400px;
+  margin: 0 auto; }
 
 body {
   color: white;
@@ -29,11 +30,23 @@ body {
   letter-spacing: 2px;
   color: white; }
 
+.header-secondary {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 3.7rem;
+  margin: 0; }
+
 .header-tertiary {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 300;
   font-size: 2.4rem;
-  font-family: 'Oswald', sans-serif; }
+  letter-spacing: 3px; }
+
+.header-forth-rate {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 2.2rem;
+  letter-spacing: 2px; }
 
 .arrow-down {
   width: 5.4rem;
@@ -44,7 +57,8 @@ body {
 
 .jumbotron {
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  margin-bottom: 4.5rem; }
   .jumbotron__layer {
     background-image: linear-gradient(45deg, #ff3f34, rgba(255, 63, 52, 0.85) 20%, rgba(72, 84, 96, 0) 20% 80%, rgba(255, 63, 52, 0.8) 80%, #ff3f34 100%);
     background-size: cover;
@@ -92,3 +106,70 @@ body {
     grid-row: 4 / span 1;
     position: absolute;
     bottom: 0.5rem; }
+
+.info {
+  width: 100%;
+  display: grid;
+  grid-template-areas: ". head head head head ." ". subhead subhead subhead subhead ." ". card1 card2 card3 card4 ." ". sum sum sum sum .";
+  grid-template-rows: 8rem repeat(3, min-content);
+  grid-template-columns: 7.5rem repeat(4, 1fr) 7.5rem;
+  gap: 3.5rem 2.5rem; }
+  .info .header-secondary {
+    grid-area: head;
+    border: 6px solid #ffd32a;
+    max-width: 80rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+    .info .header-secondary span {
+      color: #ffd32a; }
+  .info__mission {
+    grid-area: subhead; }
+  .info__card {
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4.5rem; }
+    .info__card--1 {
+      grid-area: card1; }
+    .info__card--2 {
+      grid-area: card2; }
+    .info__card--3 {
+      grid-area: card3; }
+    .info__card--4 {
+      grid-area: card4; }
+  .info__icon {
+    font-size: 7.5rem;
+    color: #ffd32a;
+    margin-top: 4.5rem;
+    margin-bottom: 2.5rem; }
+  .info__list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: square; }
+  .info__item {
+    position: relative;
+    font-size: 1.5rem;
+    line-height: 1;
+    width: 100%; }
+  .info__item:not(:last-child) {
+    margin-bottom: 3rem; }
+  .info__item:not(:last-child)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    border-radius: 25%;
+    background-color: #ffd32a; }
+  .info__sum {
+    grid-area: sum;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }

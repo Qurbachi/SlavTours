@@ -6,9 +6,23 @@
     color: white;
 }
 
+.header-secondary {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 3.7rem;
+    margin: 0;
+}
+
 .header-tertiary {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 300;
     font-size: 2.4rem;
-    font-family: 'Oswald', sans-serif;
+    letter-spacing: 3px;
+}
+
+.header-forth-rate {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
 }

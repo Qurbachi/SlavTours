@@ -1,6 +1,7 @@
 .jumbotron {
     width: 100%;
     height: 100vh;
+    margin-bottom: $big;
 
     &__layer {
         background-image: linear-gradient(45deg, rgba($red-orange, 1.0), rgba($red-orange, 0.85) 20%, rgba($gray-primary, 0) 20% 80%, rgba($red-orange, 0.8) 80%, rgba($red-orange, 1) 100%);

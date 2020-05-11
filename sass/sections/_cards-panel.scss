@@ -1,0 +1,100 @@
+.info {
+    width: 100%;
+    display: grid;
+    grid-template-areas: ". head head head head ."
+                         ". subhead subhead subhead subhead ."
+                         ". card1 card2 card3 card4 ."
+                          ". sum sum sum sum .";
+    grid-template-rows:  8rem repeat(3, min-content);
+    grid-template-columns: $grid-nav-col repeat(4, 1fr) $grid-nav-col;
+    gap: 3.5rem 2.5rem;
+
+    .header-secondary {
+        grid-area: head;
+        border: 6px solid $yellow-primary;
+        max-width: 80rem;
+        padding-left: $small;
+        padding-right: $small;
+
+        span {
+            color: $yellow-primary;
+        }
+    }
+
+    &__mission {
+        grid-area: subhead;
+    }
+
+    &__card {
+        height: min-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4.5rem;
+
+        &--1 {
+            grid-area: card1;
+
+        }
+
+        &--2 {
+            grid-area: card2;
+        }
+
+        &--3 {
+            grid-area: card3;
+        }
+
+        &--4 {
+            grid-area: card4;
+        }
+    }
+
+    &__icon {
+        font-size: 7.5rem;
+        color: $yellow-primary;
+        margin-top: 4.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        list-style-type: square;
+    }
+
+    &__item {
+        position: relative;
+        font-size: $paragraph;
+        line-height: 1;
+        width: 100%;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 3rem
+    }
+
+    &__item:not(:last-child)::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 3px;
+        border-radius: 25%;
+        background-color: $yellow-primary;
+
+    }
+
+    &__sum {
+        grid-area: sum;
+        padding: $standard;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

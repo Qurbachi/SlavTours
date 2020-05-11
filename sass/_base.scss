@@ -15,9 +15,10 @@ body {
   font-weight: 300;
   line-height: 1.6;
   box-sizing: border-box;
-  background-color: #1e272e;
+  background-color: $gray-dark;
 }
 
 .container {
   max-width: 1400px;
+  margin: 0 auto;
 }
