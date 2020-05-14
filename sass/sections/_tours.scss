@@ -1,0 +1,63 @@
+.tours {
+    margin-top: $section-break;
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: $grid-nav-col 1fr $grid-nav-col;
+    row-gap: $big;
+
+    .header-secondary {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        background-clip: text;
+        -moz-background-clip: text;
+        color: white;
+        width: max-content;
+    }
+
+    &__cards {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        display: grid;
+        grid-template-rows: repeat(auto-fill, min-content);
+        grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+        justify-content: end;
+        gap: $standard $big;
+    }
+
+    &__card {
+        height: 45rem; 
+        padding: $standard $standard;
+        display: grid;
+        grid-template-rows: min-content 1fr min-content;
+        row-gap: $standard;
+        box-shadow: 3px 3px 10px gray-primary;
+
+        .header-tertiary {
+            color: white;
+        }
+
+        &-wrapper {
+            grid-row: 2 / 3;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__check-info {
+
+        &__wrapper {
+        display: flex;
+        justify-content: right;
+        padding-right: $standard;
+        }
+
+        &__paragraph {
+            width: max-content;
+        }
+
+    }
+}

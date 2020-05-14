@@ -1,0 +1,23 @@
+.button-default {
+    display: block;
+    width: 14rem;
+    height: auto;
+    padding: 0.6rem;
+    text-align: center;
+    background-color: $gray-dark;
+    color: white;
+    border: 3px $yellow-primary solid;
+    line-height: 1.1;
+    font-family: 'bangers', sans-serif;
+    font-size: $button;
+    cursor: pointer;
+
+        &::before {
+            content: "";
+            display: block;
+            height: 120%;
+            width: 100%;
+            border: 3px $yellow-primary solid;
+            display: none;
+        }
+}
