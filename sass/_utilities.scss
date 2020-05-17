@@ -1,0 +1,28 @@
+.paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: white;
+    font-weight: 400;
+    text-align: left;
+}
+
+.margin-bottom-small {
+    margin-bottom: $small;
+}
+
+.margin-bottom-standard {
+    margin-bottom: $standard;
+}
+
+.margin-bottom-big {
+    margin-bottom: $big;
+}
+
+.margin-bottom-huge {
+    margin-bottom: $huge;
+}
+
+.margin-bottom-section-break {
+    margin-bottom: $section-break;
+}
