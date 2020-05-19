@@ -14,7 +14,7 @@
         <nav class="navigation"></nav>
 
         <!--Animated jumbotron with a button to scroll down the page-->
-        <section class="jumbotron">
+        <section class="jumbotron margin-bottom-section-break">
             <div class="jumbotron__layer"></div>
             <div class="jumbotron__bg-video">
                 <video class="jumbotron__bg-video__content" autoplay loop muted>
@@ -80,7 +80,7 @@
                         <li class="info__item">Regardles the weather we always hava a good plan :)</li>
                     </ul>
                 </div>
-            <h4 class="header-forth-rate info__sum">If You are up to something exciting and thrilling don`t hesitate and <button>check</button> our stuff out!</h4>
+            <h4 class="header-forth-rate info__sum">If You are up to something exciting and thrilling don`t hesitate and <a href="#" class="button-default">check</a>   our stuff out!</h4>
         </section>
 
         <!--TOURS CARDS SECTION-->
@@ -265,85 +265,55 @@
             </article>
         </section>
 
+        <footer class="footer">
+            <h2 class="margin-top-big margin-bottom-small header-secondary">We`ll see You soon</h2>
+            <h3 class="margin-bottom-standard header-tertiary">Don`t forget to prepare Yourself before arrival ;)</h3>
+            <div class="footer__content">
+                <div class="footer__box footer__box--currency">
+                    <table class="footer__currency-table">
+                        <thead>
+                            <th>1PLN</th>
+                            <th></th>
+                            <th><a href="#" class="button-default">Calculate</a></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Currency</th>
+                                <th>Selling</th>
+                                <th>Buying</th>
+                            </tr>
+                            <tr>
+                                <td>EUR</td>
+                                <td id="euro-selling">0.22</td>
+                                <td id"euro-buying">0,21</td>
+                            </tr>
+                            <tr>
+                                <td>USD</td>
+                                <td id="usd-selling">0.27</td>
+                                <td id="usd-selling">0.27</td>
+                            </tr>
+                            <tr>
+                                <td>GBP</td>
+                                <td id="gbp-selling">0,19</td>
+                                <td id="gbp-selling">0,19</td>
+                            </tr>
+                            <tr>
+                                <td>CHF</td>
+                                <td id="chf-selling">0.29</td>
+                                <td id="chf-selling">0.29</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="footer__box footer__box--weather"></div>
+                <div class="footer__box footer__box--info"></div>
+            </div>
+            <p class="footer__copyright">
+                &copy; by Qurbachi<br>
+                Icons by <a target="_blank" href="">https://www.freepik.com/free-photos-vectors/icon</a>
+            </p>
+        </footer>
 
-        <!--<section class="crew">
-            <h2 class="header-secondary">Meet our crew</h2>
-            <article class="crew__member">
-                <aside class="crew__description crew__description--1">
-                    <h3 class="header-tertiary">Andriey Jurovskyi</h3>
-                    <h4 class="header-forth-rate">Co-founder of the Slavengers</h4>
-                    <p class="paragraph">
-                        I come from Ivanofrankivsk in Ukraine.
-                        Travelling has been my passion since I remeber.
-                        Although I travell all over the world I try to rediscover my region all the time.
-                        I live in Cracow in Poland on a daily basis.
-                        I`m going to take You on a tour to Chernobyl zone and many other interesting destinations in Ukraine, Belarus and Poland.
-                    </p>
-                </aside>
-                <div class="crew__photo crew__photo--1">
-                    <img src="images/andriey-640.jpg"
-                         srcset="images/andriey-640.jpg 1x,
-                                 images/andriey-1280.jpg 2x,
-                                 images/andriey-1920.jpg 3x" 
-                        alt="Our guide Andriey" 
-                        class="crew__img">
-                </div>
-            </article>
-            <article class="crew__member">
-                <aside class="crew__description crew__description--2">
-                    <h3 class="header-tertiary">Henryk Szewczyk</h3>
-                    <h4 class="header-forth-rate">The most experienced man in our team</h4>
-                    <p class="paragraph">
-                        I have lived in communism for the most of my life so I know how to prevent others from that system.
-                        I also spent a couple of years in Romania as a bussiness advisor.
-                        I don`t feel like retiring and doing trips make me a great pleasure.
-                        I will acompany You on tours in former the USSR`s republics, starting form Estonia and ending on Ukraine.
-                    </p>
-                </aside>
-                <div class="crew__photo crew__photo--2">
-                    <img src="images/henryk-640.jpg" 
-                         srcset="images/henryk-640.jpg 1x,
-                                 images/henryk-1280.jpg 2x,
-                                 images/henryk-1920 3x"
-                         alt="Our guide Andriey" 
-                         class="crew__img">
-                </div>
-            </article>
-            <article class="crew__member">
-                <aside class="crew__description crew__description--3">
-                    <h3 class="header-tertiary">Damian Tworzydło</h3>
-                    <h4 class="header-forth-rate">Founder of the Slavengers</h4>
-                    <p class="paragraph">
-                        I decided to give foreigners a real experience of slavic life and culture.
-                        I got bored of repetitive offer of local tourist offices.
-                        I want You not only to visit our region and see some picturesque landmarks and main attractions.
-                        I really wish You understood the background of our culture, got know the history deeply and visit some places that guidebooks don`t say a word about.
-                        I will show You around various polish regions and Baltic states.1x,
-                </aside>
-                <div class="crew__photo crew__photo--3">
-                    <img src="images/ja.jpg" alt="" class="crew__img">
-                </div>
-            </article>
-            <article class="crew__member">
-                <aside class="crew__description crew__description--4">
-                    <h3 class="header-tertiary">Cornel Petrescu</h3>
-                    <h4 class="header-forth-rate">Romanian in the slavic world</h4>
-                    <p class="paragraph">
-                        I went on Erasmus exchange program to Poland and I stayed there for a bit longer.
-                        People know stereotypes about Romania, but they do not know Romania as it schould be known.
-                        I`m going to take You on a tour to my homeland and show it to You like You couldn`t expect.
-                    </p>
-                </aside>
-                <div class="crew__photo crew__photo--4">
-                    <img src="images/cornel-640.jpg"
-                         srcset="images/cornel-640.jpg 1x,
-                                 images/cornel-640.jpg 2x,
-                                 images/cornel-640.jpg 3x"
-                         alt="Our guide Cornel" 
-                         class="crew__img">
-                </div>
-            </article>
-        </section>-->
     </div>
 
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>

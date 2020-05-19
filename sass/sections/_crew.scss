@@ -25,6 +25,7 @@
         grid-template-columns: [frame-start] 3.75rem [col-1-start] 2fr [col-1-end col-2-start] 1fr [col-2-end col-3-start] 2fr [col-3-end] 3.75rem [frame-end];
         position: relative;
         min-height: 35rem;
+        height: max-content;
         overflow: visible;
         border: 5px solid;
         border-image: linear-gradient(-45deg, rgba($yellow-primary, 1.0), rgba($yellow-primary, 1.0) 10%, transparent 10% 90%, rgba($yellow-primary, 1.0) 90% 100%) 1;
@@ -40,9 +41,8 @@
         grid-row: 1 / span 1;
         background-color: $gray-dark;
         padding: $small $standard;
-        height: 80%;
         min-height: 39rem;
-        overflow: hidden;
+        overflow: visible;
 
         &--1,
         &--3 {
