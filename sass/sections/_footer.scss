@@ -1,4 +1,13 @@
+@import '../_mixins.scss';
+
 .footer {
+    font-family: 'Roboto', sans-serif;
+
+    > .header-secondary,
+      .header-tertiary {
+          width: 100%;
+          text-align: center;
+      }
     &__content {
         display: flex;
         max-width: 135rem;
@@ -8,25 +17,57 @@
 
     &__box {
         flex-basis: 0;
-        flex-grow: 1;
+        flex-grow: 2;
         flex-shrink: 1;
-        height: 32rem;
-        border: 2px yellow solid;
-        display: flex;
+        height: 34rem;
+
+        &:not(:last-of-type) {
+            border-right: 2px $yellow-primary solid;
+        }
 
         &--currency {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: $standard;
+            display: flex;
+            @include flex-center;
+
+            > p {
+                font-size: $paragraph;
+                font-weight: 600;
+                letter-spacing: 1px;
+            }
         }
 
         &--weather {
-
+            flex-grow: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0 $small;
+            
+            .header-forth-rate {
+                width: 100%;
+                text-align: center;
+            }
         }
 
         &--info {
+            @include flex-center;
 
+        }
+    }
+
+    //CURRENCY EXCHANGE BOX
+
+    &__table-header {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        align-items: center;
+
+        > p {
+            font-size: $header-tertiary;
+            font-weight: 600;
+            letter-spacing: 0;
         }
     }
 
@@ -38,16 +79,15 @@
 
         thead {
             th {
-                padding-bottom: $standard;
                 text-align: center;
-                font-size: $header-tertiary;
+                font-size: $paragraph;
             }
         }
 
         tbody {
             tr {
             border-bottom: 3px $green-primary solid;
-            padding-top: $standard;
+            padding-top: $small;
 
                 td {
                     padding-top: $standard;
@@ -58,8 +98,47 @@
         }
     }
 
+    //WEATHER FORECAST BOX
+    //layout of six weather panes
+    &__content-wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1r);
+        gap: $standard $small;
+    }
+
+    &__day {
+        background-color: $green-primary;
+        width: 100%;
+        display: flex;
+
+        &--info {
+            display: inline-block;
+            width: 40%;
+
+            > * {
+                border-bottom: 1px $yellow-primary solid;
+                font-weight: 200;
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+            }
+        }
+
+        &--picture {
+            display: inline-block;
+            width: 60%;
+            background-color: brown;
+        }
+
+        > * {
+            font-size: 1.5rem;
+            color: white;
+        }
+    }
+
+    //COPYRIGHT AT THE VERY BOTTOM OF THE FOOTER
     &__copyright {
-        font-family: 'Oswald', sans-serif;
         font-style: italic;
         font-size: 1.6rem;
         letter-spacing: 2px;
