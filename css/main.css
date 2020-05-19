@@ -63,6 +63,18 @@ body {
   text-decoration: none;
   color: white; }
 
+.facebook-caption {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #4267b2;
+  letter-spacing: 0; }
+
+.tripadvisor-caption {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #00af87;
+  letter-spacing: 2px; }
+
 .button-default {
   display: inline-block;
   width: 14rem;
@@ -114,6 +126,14 @@ body {
   color: white;
   font-size: 4rem;
   display: block; }
+
+.facebook-icon {
+  font-size: 2.5rem;
+  color: #4267b2; }
+
+.tripadvisor-icon {
+  font-size: 2.5rem;
+  color: #00af87; }
 
 .jumbotron {
   width: 100%;
@@ -388,7 +408,10 @@ $breakpoint arguments:
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 2.5rem; }
+      padding: 2.5rem;
+      text-align: right; }
+      .footer__box--info p {
+        font-size: 1.5rem; }
   .footer__table-header {
     display: flex;
     width: 70%;
@@ -438,6 +461,16 @@ $breakpoint arguments:
     .footer__day > * {
       font-size: 1.5rem;
       color: white; }
+  .footer__formal-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    font-weight: 600; }
   .footer__copyright {
     font-style: italic;
     font-size: 1.6rem;

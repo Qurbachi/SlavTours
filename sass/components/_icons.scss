@@ -4,5 +4,15 @@
     color: white;
     font-size: 4rem;
     display: block;
-    
+}
+
+.facebook-icon {
+    //color: $facebook;
+    font-size: $standard;
+    color: $facebook;
+}
+
+.tripadvisor-icon {
+    font-size: $standard;
+    color: $tripadvisor;
 }
